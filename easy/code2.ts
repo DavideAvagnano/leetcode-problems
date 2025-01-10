@@ -1,4 +1,5 @@
 /*
+STRING MATCHING
 Given an array of string words, return all strings in words that is a substring of another word. You can return the answer in any order.
 A substring is a contiguous sequence of characters within a string
 
@@ -37,8 +38,8 @@ function stringMatching(words: string[]): string[] {
   }
   return result;
 }
-// temp O(n^2)
-// spaz O(k)
+// time O(n^2)
+// space O(n)
 
 function stringMatching2(words: string[]): string[] {
   words.sort((a, b) => a.length - b.length);
@@ -55,8 +56,8 @@ function stringMatching2(words: string[]): string[] {
   }
   return Array.from(result);
 }
-// temp O(n log n + n^2) --> (n^2)
-// spaz O(k)
+// time O(n log n + n^2) --> (n^2)
+// space O(n)
 // (same complessity overall, but in general is a better solution)
 
 console.log(stringMatching(["mass", "as", "hero", "superhero"]));
