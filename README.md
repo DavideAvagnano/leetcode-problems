@@ -9,16 +9,26 @@ The repository is structured based on problem difficulty or other categories (wh
 
 ```
 LeetCode/
-├── Easy/
-│   ├── code1.ts
-│   ├── code2.ts
-├── Medium/
-│   ├── code1.ts
-│   ├── code2.ts
-├── Hard/
-│   ├── code1.ts
-│   ├── code2.ts
-└── README.md
+├── GeneralProblems/
+│   ├── Easy/
+│   │   ├── code1.ts
+│   │   ├── code2.ts
+│   ├── Medium/
+│   │   ├── code1.ts
+│   │   ├── code2.ts
+│   ├── Hard/
+│   │   ├── code1.ts
+│   │   ├── code2.ts
+├── Blind75/
+│   ├── Array/
+│   │   ├── (files related to array problems)
+│   ├── Binary/
+│   │   ├── (files related to binary problems)
+│   ├── ...
+├── README.md
+├── package-lock.json
+├── package.json
+├── tsconfig.json
 ```
 
 ## 🌟 Goals

@@ -15,7 +15,7 @@ Output: [1,2]
 
 Example 3:
 Input: nums = [3,3], target = 6
-Output: [0,1] 
+Output: [0,1]
 
 Constraints:
 2 <= nums.length <= 104
@@ -24,18 +24,6 @@ Constraints:
 Only one valid answer exists.
 */
 function twoSum(nums: number[], target: number): number[] {
-  for (let i = 0; i < nums.length; i++) {
-    for (let j = nums.length - 1; j > i; j--) {
-      if (nums[i] + nums[j] === target) return [i, j];
-    }
-  }
-
-  throw new Error("No two numbers add up to the target");
-}
-// time O(n^2)
-// space O(1)
-
-function twoSum2(nums: number[], target: number): number[] {
   const map = new Map<number, number>();
 
   for (let i = 0; i < nums.length; i++) {
@@ -48,25 +36,7 @@ function twoSum2(nums: number[], target: number): number[] {
 
   throw new Error("No two numbers add up to the target");
 }
-// time O(n)
-// space O(n)
-
-function twoSum3(nums: number[], target: number): number[] {
-  const seen: Record<number, number> = {};
-
-  for (let i = 0; i < nums.length; i++) {
-    const complement = target - nums[i];
-    if (complement in seen) {
-      return [seen[complement], i];
-    }
-    seen[nums[i]] = i;
-  }
-
-  throw new Error("No two numbers add up to the target");
-}
-// time O(n)
-// space O(n)
 
 console.log(twoSum([2, 7, 11, 15], 9));
-console.log(twoSum2([3, 2, 4], 6));
-console.log(twoSum3([3, 3], 6));
+console.log(twoSum([3, 2, 4], 6));
+console.log(twoSum([3, 3], 6));
