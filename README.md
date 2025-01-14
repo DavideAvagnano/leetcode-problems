@@ -37,10 +37,16 @@ LeetCode/
 - 🚀 **Improve** my knowledge of algorithms and data structures.
 - 📈 **Track** my progress as I solve problems.
 
-## 📚 Technologies Used
+## 🛠️ Technologies Used
 
 - **Languages**: TypeScript (others may be added in the future).
 - **Tools**: Node.js, `ts-node` to run `.ts` files directly.
+
+## 🔗 Resources
+
+- [**LeetCode**](https://leetcode.com/problemset/)
+- [**Blind 75**](https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions)
+- [**NeetCode Roadmap**](https://neetcode.io/roadmap)
 
 ## ✅ How to Contribute (Optional)
 
